@@ -15,6 +15,7 @@
 
             <label for="return-date">Return Date:</label>
             <input type="text" id="return-date" name="return_date" required>
+            <!--  -->
             <label for="travelers">Number of Travelers:</label>
             <input type="number" id="travelers" name="travelers" min="1" required>
 
