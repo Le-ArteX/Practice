@@ -19,6 +19,9 @@
             <label for="travelers">Number of Travelers:</label>
             <input type="number" id="travelers" name="travelers" min="1" required>
 
+            <input type="hidden" name="form_type" value="travel_form">
+            <!-- dvsbvs;v -->
+
             <button type="submit">Submit</button>
         </form>
     </div>
