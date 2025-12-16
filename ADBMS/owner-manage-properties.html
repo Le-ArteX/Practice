@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Owner • Manage Properties</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="brand">Real Estate MS</div>
+  <nav class="navbar">
+    <a href="owner-dashboard.html">Dashboard</a>
+    <a href="owner-properties.html" class="active">Manage Properties</a>
+    <a href="owner-agents.html">Manage Agents</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <h1>Manage Properties</h1>
+  <p class="small">Add new properties to the system or remove existing ones associated with your account.</p>
+
+  <!-- ADD PROPERTY FORM -->
+  <div class="card" style="margin-top: 20px;">
+    <h3>Add New Property</h3>
+
+    <form>
+      <div class="form-group">
+        <label>Property Type</label>
+        <select required>
+          <option>Apartment</option>
+          <option>House</option>
+          <option>Plot</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Size (sq ft)</label>
+        <input type="number" placeholder="e.g., 1200" required>
+      </div>
+
+      <div class="form-group">
+        <label>Location</label>
+        <input type="text" placeholder="Enter location" required>
+      </div>
+
+      <div class="form-group">
+        <label>Price</label>
+        <input type="number" placeholder="Enter price" required>
+      </div>
+
+      <div class="form-group">
+        <label>Status</label>
+        <select required>
+          <option>Available</option>
+          <option>Sold</option>
+          <option>Rented</option>
+        </select>
+      </div>
+
+      <button class="btn">Add Property</button>
+    </form>
+  </div>
+
+  <!-- DELETE PROPERTIES TABLE -->
+  <h3 style="margin-top: 25px;">Existing Properties</h3>
+
+  <table>
+    <tr>
+      <th>Property ID</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>Location</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+
+    <tr>
+      <td>P201</td>
+      <td>Apartment</td>
+      <td>1200 sq ft</td>
+      <td>Mirpur, Dhaka</td>
+      <td>2,500,000</td>
+      <td>Available</td>
+      <td><button class="btn" style="background:#d9534f;">Delete</button></td>
+    </tr>
+
+    <tr>
+      <td>P202</td>
+      <td>House</td>
+      <td>3000 sq ft</td>
+      <td>Gulshan, Dhaka</td>
+      <td>12,000,000</td>
+      <td>Rented</td>
+      <td><button class="btn" style="background:#d9534f;">Delete</button></td>
+    </tr>
+
+    <tr>
+      <td>P203</td>
+      <td>Plot</td>
+      <td>4500 sq ft</td>
+      <td>Uttara, Dhaka</td>
+      <td>8,000,000</td>
+      <td>Available</td>
+      <td><button class="btn" style="background:#d9534f;">Delete</button></td>
+    </tr>
+  </table>
+
+</div>
+
+<footer class="footer">
+  © 2025 Real Estate MS
+</footer>
+
+</body>
+</html>

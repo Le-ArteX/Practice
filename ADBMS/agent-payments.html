@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agent - Payments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="brand">Agent</div>
+  <nav class="navbar">
+    <a href="agent-dashboard.html">Dashboard</a>
+    <a href="agent-transactions.html">My Transactions</a>
+    <a href="agent-payments.html">Payments</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Record Payment</h1>
+
+  <form onsubmit="return false;">
+    <div class="form-row">
+      <div style="flex:1;" class="form-group">
+        <label>Transaction ID</label>
+        <input type="text" placeholder="e.g. 501">
+      </div>
+      <div style="width:220px;" class="form-group">
+        <label>Amount</label>
+        <input type="number">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div style="flex:1;" class="form-group">
+        <label>Payment Date</label>
+        <input type="date">
+      </div>
+      <div style="width:220px;" class="form-group">
+        <label>Method</label>
+        <select>
+          <option>Cash</option>
+          <option>Card</option>
+          <option>Mobile Banking</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn">Save Payment</button>
+  </form>
+
+  <h3 style="margin-top:16px;">Recent Payments</h3>
+  <table>
+    <tr><th>Payment ID</th><th>Txn</th><th>Amount</th><th>Date</th></tr>
+    <tr><td>701</td><td>501</td><td>500,000</td><td>2024-05-15</td></tr>
+  </table>
+</div>
+
+<footer class="footer">Payments recorded by agent are logged here.</footer>
+</body>
+</html>
