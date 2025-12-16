@@ -34,6 +34,7 @@
             margin-top: 15px;
             font-weight: 510;   
             color: #333;
+            font-size: 1em;
         }
         input[type="text"],
         input[type="email"],
